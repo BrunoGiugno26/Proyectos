@@ -1,0 +1,338 @@
+
+
+/*font-family: 'Bebas Neue', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Staatliches', cursive;*/
+
+:root{
+    --FuenteHeading:'Bebas Neue', sans-serif;
+    --FuenteTexto:'Nunito', sans-serif;
+    --Primario:rgb(245, 227, 212);
+    --secundario:rgb(124, 116, 109);
+    --blanco:white;
+    --negro:black;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+/*UTILIDADES*/
+
+.padding-top{
+    padding-top: 4rem;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+body{
+    font-family: var(--FuenteHeading);
+    background-image: linear-gradient(to right, rgb(53, 163, 43), rgb(85, 172, 78));
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/*Parametros Globales*/
+
+.contenedor{
+    width: min (90%,120rem);
+    margin:0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--FuenteHeading);
+    line-height: 1.2;
+    -webkit-text-stroke: 0.5px black;
+    color: var(--blanco);
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.header{
+    background-image: url(/img/the_last_of_us_2-5120103.jpg);
+    height: 70rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header_texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 20rem;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 12rem;
+}
+
+.logo{
+    color: var(--blanco);
+}
+
+.logo_nombre{
+    font-weight:400;
+    font-size: 6rem;
+}
+
+.logo_bold{
+    font-weight: 700;
+}
+
+.navegacion{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--blanco);
+}
+
+.contenedor-principal{
+    padding-top: 4rem;
+}
+
+table{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 120rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: var(--secundario);
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid black;
+    font-size: 2.3rem;
+    border-radius: 4px;
+    font-family: var(--FuenteHeading);
+    padding: 1rem;
+}
+
+td{
+    border: 1px solid black;
+    font-size: 2.3rem;
+    background-color: var(--Primario);
+    font-family: var(--FuenteHeading);
+    text-align: center;
+    padding: 1rem;
+}
+
+image{
+    width: 70%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+p{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+.entrada{
+    border-bottom: 3px solid var(--Primario);
+    margin-bottom: 2rem;
+}
+
+.img-entrada{
+    border: 5px solid var(--blanco);
+    width: 300px;
+    margin-left: 8rem;
+}
+
+.h3skills{
+    margin-left: 3rem;
+    line-height: 1;
+}
+
+.olAbby{
+    color: var(--blanco);
+    -webkit-text-stroke: 0.2px black;
+    font-size: 2rem;
+}
+
+.ulEllie{
+    color: var(--blanco);
+    -webkit-text-stroke: 0.2 black;
+    font-size: 2rem;
+}
+
+.ShortE{
+    margin-left:10rem
+}
+
+.ShortA{
+    margin-left: 40rem;
+}
+
+.h1-section{
+    padding-top: 4rem;
+}
+
+.footer{
+    background-image: url(/img/The\ last\ of\ us\ para\ footer.jpg);
+    background-color: var(--negro);
+    padding-bottom: 0.4rem;
+    margin-top: 4rem;
+}
+
+.logo_nombreF{
+    font-weight:900;
+    font-size: 6rem;
+}
+
+.navegacion_enlaceF{
+    display: block;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--blanco);
+   -webkit-text-stroke: 1px var(--negro);
+    font-weight: 900;
+}
+
+@keyframes escalar{
+    100%{transform: scale(1.2);}
+}
+.navegacion_enlace:hover{
+    animation: escalar 2s infinite;
+}
+
+.navegacion_enlaceF:hover{
+    animation: escalar 2s infinite;
+}
+
+/*ABOUT US*/
+
+.About-us{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    column-gap: 2rem;
+}
+
+.About-us_imagen{
+    padding-bottom: 5rem;
+    margin-left: 3rem ;
+}
+
+.About-us_texto{
+
+}
+
+/*Contact*/
+
+.Contact-gb{
+    background-image: url(/img/Firefiles\ for\ contact.jpg);
+    height: 70rem;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.formulario{
+    background-color: var(--Primario);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 3rem;
+    font-size: 2.3rem;
+}
+
+.campo_label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 3rem;
+}
+
+.campo_field{
+    flex: 1;
+    border: 2px solid var(--secundario);
+}
+
+.campo_field--textarea{
+    height: 20rem ;
+}
+
+.boton{
+    display: inline-block;
+    font-family: var(--FuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.boton--primario{
+    background-color: var(--negro);
+}
+
+.h1-contact{
+    font-family: var(--FuenteTexto);
+    font-size: 6rem;
+}
+
+@keyframes colores{
+    0%{color: white;}
+    25%{color: rgba(238, 238, 238, 0.945);}
+    50%{color: rgba(255, 249, 249, 0.637);}
+    75%{color: rgba(238, 238, 238, 0.945);}
+    100%{color: white;}
+}
+
+.logo_nombre:hover{
+    animation: colores 2s infinite;
+}
+
+.logo_nombreF:hover{
+    animation: colores 2s infinite;
+}
